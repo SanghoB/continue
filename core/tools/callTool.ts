@@ -3,6 +3,7 @@ import { MCPManagerSingleton } from "../context/mcp";
 import { canParseUrl } from "../util/url";
 import { BuiltInToolNames } from "./builtIn";
 
+import { acrosticPromptToolImpl } from './implementations/acrosticPromptTool'; // 새로운 툴 import
 import { createNewFileImpl } from "./implementations/createNewFile";
 import { exactSearchImpl } from "./implementations/exactSearch";
 import { readCurrentlyOpenFileImpl } from "./implementations/readCurrentlyOpenFile";
@@ -131,6 +132,8 @@ export async function callTool(
       return await viewSubdirectoryImpl(args, extras);
     case BuiltInToolNames.ReadCurrentlyOpenFile:
       return await readCurrentlyOpenFileImpl(args, extras);
+    case BuiltInToolNames.AcrosticPromptTool:  // Add this line
+      return await acrosticPromptToolImpl(args, extras);
     default:
       return await callToolFromUri(uri, args, extras);
   }

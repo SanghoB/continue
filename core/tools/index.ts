@@ -1,3 +1,4 @@
+import { acrosticPromptTool } from "./definitions/acrosticPromptTool"; // 새로운 툴 정의 import
 import { createNewFileTool } from "./definitions/createNewFile";
 import { exactSearchTool } from "./definitions/exactSearch";
 import { readCurrentlyOpenFileTool } from "./definitions/readCurrentlyOpenFile";
@@ -18,4 +19,5 @@ export const allTools = [
   searchWebTool,
   viewDiffTool,
   readCurrentlyOpenFileTool,
+  acrosticPromptTool, // Add this line
 ];

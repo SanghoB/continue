@@ -43,6 +43,7 @@ export const uiSlice = createSlice({
       [BuiltInToolNames.ExactSearch]: "allowedWithoutPermission",
       [BuiltInToolNames.SearchWeb]: "allowedWithoutPermission",
       [BuiltInToolNames.ViewDiff]: "allowedWithoutPermission",
+      [BuiltInToolNames.AcrosticPromptTool]: "allowedWithoutPermission", // Add this line
     },
   } as UIState,
   reducers: {

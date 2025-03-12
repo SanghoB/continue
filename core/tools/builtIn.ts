@@ -8,4 +8,5 @@ export enum BuiltInToolNames {
   ExactSearch = "builtin_exact_search",
   SearchWeb = "builtin_search_web",
   ViewDiff = "builtin_view_diff",
+  AcrosticPromptTool = "builtin_make_acrostic_prompt", // Add this line
 }
